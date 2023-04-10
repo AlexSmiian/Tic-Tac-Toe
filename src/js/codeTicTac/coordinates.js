@@ -32,7 +32,7 @@ function getCoordinations  () {
 	if(this.lastChild == null){
 	
 		if(countClick % 2 !== 0){
-			this.innerHTML = `<img src= '../../images/cross.png' />`
+			this.innerHTML = `<img src= './images/cross.png' />`
 		
 			playerOneResult.push([
 				this.getAttribute('data-x'),
@@ -40,7 +40,7 @@ function getCoordinations  () {
 				playerOneResult.sort()	
 				 resultComparisonPlayerOne (playerOneResult)
 		}else {
-			this.innerHTML = `<img src= '../../images/circle.png' />`
+			this.innerHTML = `<img src= './images/circle.png' />`
 			playerTwoResult.push([
 				this.getAttribute('data-x'),
 				this.getAttribute('data-y')])
